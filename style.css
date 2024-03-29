@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjusted to align content to the start */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; /* Resets any default margin */
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    padding-top: 40px; /* Adds padding at the top */
+    color: #ffffff;
+  }
+  
+  .title {
+    font-size: 3em; /* Increases font size for more impact */
+    color: #FFD700; /* Changes the color to a gold shade for emphasis */
+    margin: 0 0 50px; /* Increases bottom margin for more space between title and board */
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Enhances text shadow for deeper contrast */
+    font-family: 'Georgia', serif; /* Switches font for a more elegant appearance */
+    padding: 20px; /* Adds padding for a larger, more block-like appearance */
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background highlight */
+    border-radius: 10px; /* Rounds corners of the background */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Adds a glowing effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoothens transitions for hover effects */
+  }
+  
+  .title:hover {
+    transform: scale(1.05); /* Slightly enlarges title on hover */
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.75); /* Increases glow effect on hover */
+  }
+  
+  
+  .jeopardy-board {
+    width: 95%; /* Ensures the board uses most of the horizontal space */
+    max-width: 1200px; /* Prevents the board from becoming too wide on larger screens */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Maintains 6 columns for categories */
+    gap: 20px; /* Increases gap for better separation */
+    max-width: 90%; /* Limits board width to ensure it doesn't get too wide */
+    margin: auto; /* Centers the board horizontally */
+    padding: 30px; /* Increases padding for a more spacious look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds depth */
+  }
+  
+  .category, .points {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px; /* Increases the height for better visibility */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s; /* Smoothens transitions */
+    cursor: pointer; /* Indicates clickable items */
+  }
+  
+  .category {
+    background-color: #bd3017; /* Category color */
+    font-size: 1.4em; /* Increases font size for categories */
+  }
+  
+  .points {
+    background-color: #b38a32; /* Points color */
+    font-size: 1.8em; /* Increases font size for points */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smoothens hover effects */
+  }
+  
+  .points:hover {
+    background-color: #cc2323; /* Darkens on hover */
+    transform: scale(1.1); /* Enlarges items on hover */
+  }

@@ -1,0 +1,35 @@
+.question-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the container fills the entire viewport height */
+    background-color: #121212; /* Matches the board's dark background */
+    color: #ffffff; /* Ensures text is bright and readable against the dark background */
+    font-family: 'Arial', sans-serif; /* Consistent font style */
+    padding: 40px 0; /* Adds some padding around to avoid touching the edges */
+  }
+  
+  .question-container {
+    width: 90%; /* Slightly increased width for better use of space */
+    max-width: 800px; /* Increased max width for larger screens */
+    padding: 40px; /* More padding for a spacious look */
+    background-color: #b38a32; /* A gold color to match the points color scheme */
+    border-radius: 15px; /* Slightly larger radius for smoother corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* More prominent shadow for depth */
+    text-align: center; /* Center-aligns the content for consistency */
+  }
+  
+  .question-amount {
+    font-size: 2.2em; /* Larger size for emphasis */
+    color: #FFD700; /* Bright gold color for distinction */
+    margin-bottom: 30px; /* Increased space between amount and question */
+  }
+  
+  .question-text {
+    font-size: 2em; /* Slightly larger font for readability */
+    color: #FFF; /* Bright white for clarity */
+    margin: 0 auto; /* Centers text block horizontally */
+    max-width: 90%; /* Limits width of text for better reading */
+  }
+
+  
