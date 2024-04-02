@@ -12,25 +12,30 @@ body {
   }
   
   .title {
-    font-size: 3em; /* Increases font size for more impact */
-    color: #FFD700; /* Changes the color to a gold shade for emphasis */
-    margin: 0 0 50px; /* Increases bottom margin for more space between title and board */
-    text-align: center;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Enhances text shadow for deeper contrast */
-    font-family: 'Georgia', serif; /* Switches font for a more elegant appearance */
-    padding: 20px; /* Adds padding for a larger, more block-like appearance */
-    background-color: rgba(255, 255, 255, 0.2); /* Slight background highlight */
-    border-radius: 10px; /* Rounds corners of the background */
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Adds a glowing effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoothens transitions for hover effects */
-  }
-  
-  .title:hover {
-    transform: scale(1.05); /* Slightly enlarges title on hover */
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.75); /* Increases glow effect on hover */
-  }
-  
-  
+    font-size: 7em; /* Increase font size for more prominence */
+    padding: 60px 0; /* Adjust vertical padding to ensure it doesn't take up too much space */
+    line-height: 1; /* Make line height snug for the title, assuming it's a single line */
+    color: #FFD700; /* Keeps the gold color for visibility and theme consistency */
+    width: auto; /* Remove the width constraint to allow the text to define its own necessary space */
+    margin: 0 auto; /* Keeps the title centered */
+    text-align: center; /* Ensures the title is centered within its block */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Sharpens the text shadow for depth */
+    font-family: 'Georgia', serif; /* Maintains a formal look suitable for the title */
+    background-color: transparent; /* Removes the background for a cleaner look */
+    border-radius: 0; /* No border radius needed for a cleaner look */
+    box-shadow: none; /* Removes box shadow for the title for simplicity */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    cursor: default; /* Changes cursor to default since the title doesn't need to suggest interactivity */
+    display: inline-block; /* Changes display to inline-block to reduce the excessive space */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.title:hover {
+    color: #e6c200; /* Slightly changes color on hover for a subtle effect, even if it's not necessary to have interaction */
+}
+
+
+
   .jeopardy-board {
     width: 95%; /* Ensures the board uses most of the horizontal space */
     max-width: 1200px; /* Prevents the board from becoming too wide on larger screens */
@@ -71,3 +76,22 @@ body {
     background-color: #cc2323; /* Darkens on hover */
     transform: scale(1.1); /* Enlarges items on hover */
   }
+
+  #resetBoard {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #FFD700;
+    color: #121212;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#resetBoard:hover {
+    background-color: #e6c200; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+}

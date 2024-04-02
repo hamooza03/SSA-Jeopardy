@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeopardy Board</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.points').forEach(element => {
+        const pointId = element.getAttribute('href');
+        if (sessionStorage.getItem(pointId) === 'used') {
+            element.style.visibility = 'hidden';
+        }
+
+        element.addEventListener('click', function(event) {
+            sessionStorage.setItem(this.getAttribute('href'), 'used');
+        });
+    });
+    
+    // Adjusted to use the title as the reset mechanism
+    document.getElementById('resetBoard').addEventListener('click', function() {
+    sessionStorage.clear();
+    document.querySelectorAll('.points').forEach(element => {
+        element.style.visibility = 'visible';
+    });
+});
+});
+
+
+    </script>
 </head>
 <body>
-    <div class="title">SSA Jeopardy Game</div>
+    <div class="title" id="resetBoard">SSA Jeopardy Game</div>
     <div class="jeopardy-board">
         <!-- Category Headers -->
         <div class="category">Category 1</div>
@@ -19,43 +43,44 @@
         
         <!-- Points for 100 -->
         <a href="Category 1\100 Points\category1-100.html" class="points">100</a>
-        <a href="Category 1\200 Points\category1-200.html" class="points">100</a>
-        <a href="Category 1\300 Points\category1-300.html" class="points">100</a>
-        <a href="Category 1\400 Points\category1-400.html" class="points">100</a>
-        <a href="Category 1\500 Points\category1-500.html" class="points">100</a>
-        <a href="Category 1\600 Points\category1-600.html" class="points">100</a>
+        <a href="Category 2\100 Points\category2-100.html" class="points">100</a>
+        <a href="Category 3\100 Points\category3-100.html" class="points">100</a>
+        <a href="Category 4\100 Points\category4-100.html" class="points">100</a>
+        <a href="Category 5\100 Points\category5-100.html" class="points">100</a>
+        <a href="Category 6\100 Points\category6-100.html" class="points">100</a>
         
         <!-- Points for 200 -->
-        <a href="category1-200.html" class="points">200</a>
-        <a href="category2-200.html" class="points">200</a>
-        <a href="category3-200.html" class="points">200</a>
-        <a href="category4-200.html" class="points">200</a>
-        <a href="category5-200.html" class="points">200</a>
-        <a href="category6-200.html" class="points">200</a>
+        <a href="Category 1\200 Points\category1-200.html" class="points">200</a>
+        <a href="Category 2\200 Points\category2-200.html" class="points">200</a>
+        <a href="Category 3\200 Points\category3-200.html" class="points">200</a>
+        <a href="Category 4\200 Points\category4-200.html" class="points">200</a>
+        <a href="Category 5\200 Points\category5-200.html" class="points">200</a>
+        <a href="Category 6\200 Points\category6-200.html" class="points">200</a>
 
         <!-- Points for 300-->
-        <a href="category1-300.html" class="points">300</a>
-        <a href="category2-300.html" class="points">300</a>
-        <a href="category3-300.html" class="points">300</a>
-        <a href="category4-300.html" class="points">300</a>
-        <a href="category5-300.html" class="points">300</a>
-        <a href="category6-300.html" class="points">300</a>
+        <a href="Category 1\300 Points\category1-300.html" class="points">300</a>
+        <a href="Category 2\300 Points\category2-300.html" class="points">300</a>
+        <a href="Category 3\300 Points\category3-300.html" class="points">300</a>
+        <a href="Category 4\300 Points\category4-300.html" class="points">300</a>
+        <a href="Category 5\300 Points\category5-300.html" class="points">300</a>
+        <a href="Category 6\300 Points\category6-300.html" class="points">300</a>
 
         <!-- Points for 400-->
-        <a href="category1-400.html" class="points">400</a>
-        <a href="category2-400.html" class="points">400</a>
-        <a href="category3-400.html" class="points">400</a>
-        <a href="category4-400.html" class="points">400</a>
-        <a href="category5-400.html" class="points">400</a>
-        <a href="category6-400.html" class="points">400</a>
+        <a href="Category 1\400 Points\category1-400.html" class="points">400</a>
+        <a href="Category 2\400 Points\category2-400.html" class="points">400</a>
+        <a href="Category 3\400 Points\category3-400.html" class="points">400</a>
+        <a href="Category 4\400 Points\category4-400.html" class="points">400</a>
+        <a href="Category 5\400 Points\category5-400.html" class="points">400</a>
+        <a href="Category 6\400 Points\category6-400.html" class="points">400</a>
         
         <!-- Points for 500 -->
-        <a href="category1-500.html" class="points">500</a>
-        <a href="category2-500.html" class="points">500</a>
-        <a href="category3-500.html" class="points">500</a>
-        <a href="category4-500.html" class="points">500</a>
-        <a href="category5-500.html" class="points">500</a>
-        <a href="category6-500.html" class="points">500</a>
+        <a href="Category 1\500 Points\category1-500.html" class="points">500</a>
+        <a href="Category 2\500 Points\category2-500.html" class="points">500</a>
+        <a href="Category 3\500 Points\category3-500.html" class="points">500</a>
+        <a href="Category 4\500 Points\category4-500.html" class="points">500</a>
+        <a href="Category 5\500 Points\category5-500.html" class="points">500</a>
+        <a href="Category 6\500 Points\category6-500.html" class="points">500</a>
     </div>
+
 </body>
 </html>

@@ -1,35 +1,59 @@
 .question-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures the container fills the entire viewport height */
-    background-color: #121212; /* Matches the board's dark background */
-    color: #ffffff; /* Ensures text is bright and readable against the dark background */
-    font-family: 'Arial', sans-serif; /* Consistent font style */
-    padding: 40px 0; /* Adds some padding around to avoid touching the edges */
-  }
-  
-  .question-container {
-    width: 90%; /* Slightly increased width for better use of space */
-    max-width: 800px; /* Increased max width for larger screens */
-    padding: 40px; /* More padding for a spacious look */
-    background-color: #b38a32; /* A gold color to match the points color scheme */
-    border-radius: 15px; /* Slightly larger radius for smoother corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* More prominent shadow for depth */
-    text-align: center; /* Center-aligns the content for consistency */
-  }
-  
-  .question-amount {
-    font-size: 2.2em; /* Larger size for emphasis */
-    color: #FFD700; /* Bright gold color for distinction */
-    margin-bottom: 30px; /* Increased space between amount and question */
-  }
-  
-  .question-text {
-    font-size: 2em; /* Slightly larger font for readability */
-    color: #FFF; /* Bright white for clarity */
-    margin: 0 auto; /* Centers text block horizontally */
-    max-width: 90%; /* Limits width of text for better reading */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the container fills the entire viewport height */
+  background-color: #121212; /* Matches the board's dark background */
+  color: #ffffff; /* Ensures text is bright and readable against the dark background */
+  font-family: 'Arial', sans-serif; /* Consistent font style */
+  padding: 40px 0; /* Adds some padding around to avoid touching the edges */
+}
 
-  
+.question-container {
+  width: 90%; /* Slightly increased width for better use of space */
+  max-width: 800px; /* Increased max width for larger screens */
+  padding: 40px; /* More padding for a spacious look */
+  background-color: #b38a32; /* A gold color to match the points color scheme */
+  border-radius: 15px; /* Slightly larger radius for smoother corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* More prominent shadow for depth */
+  text-align: center; /* Center-aligns the content for consistency */
+}
+
+.question-amount {
+  font-size: 2.2em; /* Larger size for emphasis */
+  color: #FFD700; /* Bright gold color for distinction */
+  margin-bottom: 30px; /* Increased space between amount and question */
+}
+
+.question-text {
+  font-size: 2em; /* Slightly larger font for readability */
+  color: #FFF; /* Bright white for clarity */
+  margin: 0 auto; /* Centers text block horizontally */
+  max-width: 90%; /* Limits width of text for better reading */
+}
+
+.question-image {
+  max-width: 80%; /* Adjusts the image size to not exceed 80% of its container's width */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Makes the image a block-level element to enable horizontal centering */
+  margin: 20px auto; /* Adds top and bottom margins of 20px and auto margins on the sides for centering */
+  border-radius: 10px; /* Optional: Rounds the corners of the image */
+}
+
+.return-button {
+  display: inline-block;
+  background-color: #FFD700; /* Gold color to match the theme */
+  color: #121212; /* Dark text for contrast */
+  text-decoration: none; /* Removes underline from link */
+  padding: 15px 30px; /* Adequate padding for a comfortable click area */
+  border-radius: 8px; /* Rounded corners */
+  font-weight: bold; /* Makes the text bold */
+  margin-top: 30px; /* Distance from the question or image above */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.return-button:hover {
+  background-color: #e6c200; /* Slightly darker gold on hover for interaction feedback */
+  transform: scale(1.05); /* Slight enlargement to indicate hover state */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
