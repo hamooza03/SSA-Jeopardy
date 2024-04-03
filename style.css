@@ -5,7 +5,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0; /* Resets any default margin */
-    background-color: #121212;
+    background-color: #6c0707;
     font-family: 'Arial', sans-serif;
     padding-top: 40px; /* Adds padding at the top */
     color: #ffffff;
@@ -62,13 +62,13 @@ body {
   }
   
   .category {
-    background-color: #bd3017; /* Category color */
-    font-size: 1.4em; /* Increases font size for categories */
+    background-color: #b38a32; /* Category color */
+    font-size: 2.5em; /* Increases font size for categories */
   }
   
   .points {
-    background-color: #b38a32; /* Points color */
-    font-size: 1.8em; /* Increases font size for points */
+    background-color: #c0b57a; /* Points color */
+    font-size: 2.2em; /* Increases font size for points */
     transition: background-color 0.2s ease, transform 0.2s ease; /* Smoothens hover effects */
   }
   
@@ -80,11 +80,11 @@ body {
   #resetBoard {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 60px;
+    font-size: 75px;
     cursor: pointer;
     border-radius: 5px;
     border: none;
-    background-color: #FFD700;
+    background-color: #c0b57a;
     color: #121212;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;

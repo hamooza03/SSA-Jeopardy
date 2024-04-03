@@ -42,7 +42,7 @@
   
   .return-button {
     display: inline-block;
-    background-color: #6c0707; /* Gold color to match the theme */
+    background-color: #c0b57a; /* Gold color to match the theme */
     color: #121212; /* Dark text for contrast */
     text-decoration: none; /* Removes underline from link */
     padding: 15px 30px; /* Adequate padding for a comfortable click area */

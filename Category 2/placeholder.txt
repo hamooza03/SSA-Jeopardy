@@ -1,0 +1,1 @@
+I seperated everything by category, and then by points for each .html and css file :)
